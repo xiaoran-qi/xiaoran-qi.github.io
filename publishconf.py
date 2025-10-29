@@ -35,11 +35,17 @@ MARKDOWN = {
 # URLs work correctly.
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
-if SITE["baseurl"] is not None:
-    SITEURL = SITE["url"] + "/" + SITE["baseurl"] 
-else:
-    SITEURL = SITE["url"] 
-RELATIVE_URLS = True 
+SITE = {
+    "url": "https://xiaoran-qi.github.io",
+    "baseurl": "", 
+}
+SITEURL = SITE["url"] if SITE["baseurl"] in (None, "") else SITE["url"] + "/" + SITE["baseurl"]
+RELATIVE_URLS = False
+# if SITE["baseurl"] is not None:
+#     SITEURL = SITE["url"] + "/" + SITE["baseurl"] 
+# else:
+#     SITEURL = SITE["url"] 
+# RELATIVE_URLS = True 
 
 DELETE_OUTPUT_DIRECTORY = True
 
