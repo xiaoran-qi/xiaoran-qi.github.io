@@ -21,8 +21,8 @@ PLUGINS = ['pelican.plugins.webassets',
            'pelican.plugins.sitemap', 
            al_folio_extension]
 
-AUTHOR = f'{SITE["first_name"]} {SITE["middle_name"] if SITE["middle_name"] else ""} {SITE["last_name"]}'
-SITENAME = SITE["title"]
+AUTHOR = f'{SITE["Xiaoran"]} {SITE["middle_name"] if SITE["middle_name"] else ""} {SITE["Qi"]}'
+SITENAME = SITE["Xiaoran QI"]
 
 if SITENAME is None:
     SITENAME = AUTHOR
